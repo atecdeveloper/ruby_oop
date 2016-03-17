@@ -19,3 +19,9 @@ bolt.speak("AUAU!")
 andre = HumanBeing.new
 andre.speak("What's up!")
 
+# Method Lookup chain
+puts "---GoodDog ancestors---"
+puts GoodDog.ancestors
+puts ''
+puts "---HumanBeing ancestors---"
+puts HumanBeing.ancestors
