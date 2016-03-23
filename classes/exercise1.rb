@@ -30,8 +30,16 @@ class MyCar
     "This #{color} #{model} is from #{year}." 
   end
   
+  def to_s # User friendly print out of your object.
+    "This #{color} #{model} is from #{year}, its current speed is #{crt_speed}."
+  end
+  
   def show_speed
-    "Its current speed is #{crt_speed}km/h"
+    "Its current speed is #{crt_speed}mp/h"
+  end
+  
+  def self.gas_mileage(gallons, miles)                # Class method
+    puts "#{miles / gallons} miles per gallon of gas"
   end
 end
 
@@ -45,3 +53,5 @@ car.brake(20)
 puts car.show_speed
 car.turn_off
 puts car.show_speed
+puts MyCar.gas_mileage(10, 350)
+puts car
